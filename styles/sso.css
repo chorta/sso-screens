@@ -272,6 +272,10 @@ p.note {
 		font-weight: normal !important;
 }
 
+label {
+	color: #666;
+}
+
 
 /* --------------------
 
