@@ -74,6 +74,11 @@ h1.signing  {
 	margin-bottom: .5em;
 }
 
+.small-log {
+	font-size: 11px;
+
+}
+
 .log-options {
 	display: block;
 	float: right;
@@ -311,6 +316,11 @@ select {
 	.login-option-select {
 		float: none;
 		margin: auto;
+	}
+
+	.sso-button{
+		margin: 15px 0;
+		float: left !important
 	}
 
 
