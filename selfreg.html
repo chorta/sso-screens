@@ -97,39 +97,32 @@
 
         <section class="main-section">
 
-            <!-- Self Reg Screen Begins -->
+            <!-- SSO Screen Begins -->
 
-            <h1 class="signing hidden-xs">Signing on Using: <span class="s-type">Business Systems</span>  </h1>
+            <h1 class="signing">Step 1: <span class="s-type">Identification</span>  </h1>
+            <p>Enter your official UCSD e-mail address and press Register.</p>
 
             <div class="row">
               <div class="col-sm-12 nopadding">
 
-                <div class="col-sm-7">
+                <div class="col-sm-6">
 
                   <!-- Left Column -->
 
                   <div class="sso-screen">
 
 
-                    <div class="col-sm-5 login-other">
+                    <div class="col-sm-2 pull-right">
 
-                        <label class="hidden-xs">Or sign on with:</label>
-
-                        <span class="visible-xs"><label>Sign on with:</label></span>
-
-                        <select name="SSO">
-                          <option>Active Directory</option>
-                          <option>PID</option>
-                        </select>
-
-                        <p class="make-default"><input name="MakeDefault" id="MakeDefault" type="checkbox" value="1"><label for="MakeDefault"> Make this my default</label></p>
-
+                      <div class="steps pull-right">
+                        <p><span class="grayed">1</span> / 4</p>
+                      </div>
 
                     </div>
 
 
 
-                    <div class="col-sm-7 login-option-select">
+                    <div class="col-sm-10 login-option-select">
 
 
 
@@ -137,37 +130,20 @@
                           <form id="form" name="form" method="post" action="do-it.php" target="_self">
 
                             <div class="form-group">
-                              <label for="username">Username:</label>
-                              <input type="username" class="form-control" id="username">
-                              <p class="log-options"><a href="#" alt="Create a new single sign-on account" class="hidden-xs">Create new account</a></p>
+                              <label for="email">Email:</label>
+                              <input type="email" class="form-control" id="email">
+                              <p class="note">(Example: abcd@ucsd.edu)</p>
                             </div>
 
-                            <div class="form-group">
-                              <label for="pwd">Password:</label>
-                              <input type="password" class="form-control" id="pwd">
-                              <p class="log-options"><a href="#" alt="Create a new single sign-on account" class="hidden-xs">Reset Password</a></p>
-                            </div>
 
-                            <button type="submit" class="btn btn-primary pull-right sso-button">Sign on</button>
 
-                            <div class="row clearfix visible-xs">
-                              <div class="col-xs-12">
-                                <div class="col-xs-6 nopadding pull-left">
-                                  <p class="small-log"><a href="#" alt="Create a new single sign-on account" class="visible-xs pull-left">Create new account</a></p>
-                                </div>
-                                <div class="col-xs-6 nopadding pull-right">
-                                  <p class="small-log"><a href="#" alt="Create a new single sign-on account" class="visible-xs pull-right">Reset Password</a></p>
-                                </div>
-                              </div>
-                            </div>
+                            <button type="submit" class="btn btn-primary pull-left">Register</button>
 
                         </form>
 
 
 
                       </div>
-
-                        <p class="tip"><span class="sso-info" title="information"></span>Sign out and close your browser when you're finished.</p>
 
                   </div>
 
@@ -176,16 +152,17 @@
 
                 <!--left col start -->
 
-                <div class="col-sm-5">
+                <div class="col-sm-6">
 
                   <div class="sso-links">
 
-                      <h3>Links</h3>
+                      <h3>By pressing the Register button, you agree to:</h3>
 
                           <ul>
-                              <li><a href="#">Learn about Single Sign-On</a></li>
-                              <li><a href="#">Contact your Departmental Security Administrator (DSA)</a></li>
-                              <li><a href="#">Contact the ACT Help Desk</a></li>
+                              <li>Use the account only for bona fide University transactions.</li>
+                              <li>Never share your password or access.</li>
+                              <li>Promptly <a href="http://blink.ucsd.edu/Blink/External/Topics/How_To/0,1260,18978,00.html">report suspected security violations</a>.</li>
+                              <li>Understand <a href="http://blink.ucsd.edu/go/security">UCSD's computer security policy</a>.</li>
                           </ul>
 
                   </div>
@@ -198,7 +175,14 @@
               </div>
             </div>
 
-            <!-- Self Reg Screen Ends -->
+            <!-- SSO Screen Ends -->
+
+            <div class="footer-links">
+              <p>Need help? <a href="https://altng.ucsd.edu/extras/dsaSearch.jsp">Contact your Department Security Administrator(DSA)</a> or contact the <a href="http://blink.ucsd.edu/technology/help-desk/service-desk/index.html">ITS Service Desk</a> at (858) 534-1853.</p>
+              <p>Need to look up your official UCSD e-mail address? <a href="http://blink.ucsd.edu/Blink/External/Campus_Directory/1,2369,,00.html">Use the campus directory</a>.</p>
+
+              <p>All inquiries and transactions are automatically logged and are used for audit and security monitoring purposes. Access violators will be prosecuted.</p>
+            </div>
 
         </section>
     </div>

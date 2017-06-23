@@ -246,6 +246,28 @@ select {
 	clear: both !important;
 }
 
+.steps p {
+    font-size: 20px;
+    color: #ccc;
+}
+
+p.note {
+    margin: 10px 0;
+		font-size: 13px;
+}
+
+.footer-links {
+    color: #999;
+    clear: both;
+    display: block;
+    font-size: 13px;
+    padding: 30px 0 0;
+}
+
+.grayed {
+    color: #ababab;
+}
+
 /* --------------------
 
  MEDIA QUERIES
@@ -342,11 +364,6 @@ select {
 @media screen and (max-width: 580px) {
 
 
-	h1.signing  {
-		margin: 10px auto 20px;
-		width: 93%;
-	}
-
 	.s-type {
 		color:#666;
 		font-weight:400;
@@ -370,9 +387,7 @@ select {
 
 @media screen and (max-width: 490px) {
 
-	h1.signing {
-		display: none;
-	}
+
 
 }
 
