@@ -1,0 +1,533 @@
+/* SSO Login Screen Styles - 
+
+Author: Cristian Horta
+Date: June 24, 2013
+
+*/
+
+
+.stepdesc {
+	color: #4B4B4B;
+	font-size: 105%;
+	font-weight: 500;
+	margin-bottom: 1.25em;
+}
+
+.reg-help li{
+	margin: 0;
+	list-style: none;
+	margin-bottom: 1em;
+}
+
+.note { 
+	font-size: 12px;
+	margin-top: 10px;
+}
+
+.more-text {
+	float: left;
+	margin: 20px 0 0 15px;
+}
+
+.steps {
+	width: 15%;
+	float:right;
+	text-align: right;
+}
+
+.steps p {
+	font-size: 20px;
+	color: #ccc;
+}
+
+.step-sel {
+	color: #333;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width: 40px;
+}
+
+.grayed {
+	color: #ababab;
+}
+
+.footer-links {
+	color: #999;
+	clear: both;
+	display: block;
+	font-size: 13px;
+	padding: 30px 0 0;
+}
+
+.full-w {
+	width: 90% !important;
+}
+
+/* CWO Template resets */ 
+
+
+#tdr_crumbs { 
+	display: none;
+}
+
+/*end rests*/
+
+h1.reg  {
+	font-size: 20px;
+	margin: 15px 0 25px;
+}
+
+h2.stepdesc  {
+	margin: 15px 0 25px;
+}
+
+.s-type {
+	color:#666; 
+	font-weight:400;
+}
+
+.sso-screen {
+	background-color: #eeeeee;
+	float: left;
+	min-height: 50px;
+	padding: 10px;
+	overflow: hidden;
+	position: relative;
+	width: 54%;
+}
+
+.reg-right-col {
+	width: 42%;
+	float: right;
+}
+
+
+.sso-pic { 
+	float: right;
+	padding: 0 0 10px;
+	position: relative;
+	max-width: 100%;
+}
+
+
+.sso-links { 
+	float: right;
+	min-height: 50px;
+	padding: 0 0 10px;
+	position: relative;
+	max-width: 100%;
+}
+
+
+.sso-links h3 {
+	color: #666;
+}
+
+.sso-links ul {
+	border-top: 1px solid #ccc;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+.sso-links li {
+	color: #666;
+	margin-bottom: .5em;
+}
+
+
+.fw-links { 
+	float: left;
+	min-height: 50px;
+	padding: 0 0 10px;
+	position: relative;
+	width: 100%;
+}
+
+.fw-links ul {
+	border-top: 1px solid #ccc;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+
+
+
+
+.log-options {
+	display: block;
+	float: right;
+	font-size: 11px;
+	margin: 5px;
+}
+
+.log-info {
+	display: block;
+	overflow: hidden;
+	padding: 5px;
+	width: 100%;
+}
+
+.log-type {
+	display: block;
+	overflow: hidden;
+	padding: 5px;
+	width: auto;
+}
+
+.reg-steps {
+	float: left;
+	margin-top: 10px;
+	width: 80%;
+}
+
+
+.reg-other {
+	background-position: 0 10px;
+	background-repeat: no-repeat;
+	border-left: 1px solid #ccc;
+	float: right;
+	margin-top: 10px;
+	padding-left: 35px;
+	width: 250px;
+}
+
+
+.log-info p, .reg-other p {
+	color: #666;
+}
+
+
+.bold {
+	font-weight: bold;
+}
+
+/* input styles */ 
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input {
+	border: 1px solid #999;
+	border-radius: 0;
+	height: 27px;
+	-webkit-appearance: none;
+	border-radius: 0;
+	margin-bottom: 5px;
+	padding: .25em;
+}
+
+
+.email {
+	width: 250px;
+	padding: .25em  .25em .25em 26px !important;
+}
+
+
+.ucsd-id {
+	margin-bottom: 10px;
+	padding-left: 10px !important;
+	width: 95%;
+}
+
+.ssn {
+	margin-bottom: 10px;
+	padding-left: 35px !important;
+	width: 75px;
+}
+
+.bday {
+	margin-bottom: 10px;
+	padding-left: 10px !important;
+	width: 100px;
+}
+
+.reg-steps input[type="password"] {
+	border: 1px solid #999;
+	border-radius: 0;
+	height: 27px;
+	padding: .25em  .25em .25em 26px;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	width: 250px;
+}
+
+
+input:focus {
+  border: 1px solid transparent;
+}
+
+input:focus {		
+	color: inherit;
+	border: 1px solid #007a9e;
+	outline: none;
+}
+
+.f-error {
+	border: 1px solid #F00 !important;
+	color: #F00;
+}
+
+select {
+	color: #333;
+	margin-bottom: 15px;
+	width: 80%;
+}
+
+.reg-button {
+	color: #fff;
+	cursor: pointer;
+	background: #1b739a;
+    border: none;
+	border-radius: none;
+	float: left;
+	height: 35px;
+	margin: 10px 0 0  0;
+	text-shadow: none;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	width: 81px;
+}
+
+/** end input **/ 
+
+.solo {
+	display: block;
+	clear: both;
+}
+
+.b-container { 
+	overflow: hidden;
+	padding: 5px;
+}
+
+
+.np {
+	padding: 0px !important;
+}
+
+.reg-button:hover {
+	background: #116990;
+}
+
+.reg-button:active {
+	position: relative;
+	top: 1px;
+}
+
+.reg-button:focus {
+	background-color: #116990;
+	border: 2px solid #CCC;
+	color: #FFF;
+}
+
+
+.email {
+	background-image: url(../../_images/email.png);
+	background-repeat:no-repeat;
+	background-position: 0 4px;
+	width: 87%;
+}
+
+.email:focus {
+	background-image: url(../../_images/email_active.png);
+}
+
+
+.pass {
+	height: 25px;
+	background-image: url(../../_images/key.png);
+	background-repeat:no-repeat;
+	background-position: 0 4px;
+}
+
+.pass:focus {
+	background-image: url(../../_images/key_active.png);
+}
+
+.error {
+	margin-top: 25px;
+}
+
+.wait-screen h2{
+	margin: 20px 0 20px 0;
+}
+
+
+
+.tip {
+	clear: both;
+	color: #23435e;
+	position: relative;
+	float: none;
+	padding-top: 24px;
+	font-size: .8em;
+}
+
+.sso-info { 
+	background: url(../../_images/info.png) no-repeat;
+	display: block;
+	float: left;	
+	height: 16px;
+	margin: 0 5px 0 0;
+	width: 16px;
+}
+
+.wait-screen {
+	overflow: hidden;
+}
+
+.loading {
+	clear: none !important;
+	float: left;
+	height: 95px !important;
+	margin: 0 10px 0;
+	width: 44px;
+}
+
+/* --------------------
+
+ MEDIA QUERIES 
+
+-------------------- */
+
+
+
+
+@media screen and (max-width: 768px) {
+	
+	
+	.search-button {
+		display: none !important;
+	}
+
+
+
+	
+}
+
+@media screen and (max-width: 749px) {
+	
+	.reg-steps {
+		float: none;
+		margin: auto;
+		width: 100%
+	}
+	
+	
+
+}
+
+@media screen and (max-width: 580px) {
+	
+	.steps {
+		display: none;
+	}
+	
+	
+	h1.reg  {
+		margin: 10px auto 20px;
+		width: 93%;
+	}
+	
+	h2.stepdesc  {
+		margin: 10px auto 20px;
+		width: 93%;
+	}
+
+	.s-type {
+		color:#666; 
+		font-weight:400;
+	}
+	
+	.sso-screen {
+		float: none;
+		margin: 0 auto;
+		width: 90%;
+	}
+	
+	.log-info { 
+		padding: 0;
+	}
+	
+	.reg-steps, .log-info {
+		width: 100%;
+	}
+	
+	input {
+		border-width: 2px;
+		font-size: 16px;
+		height: 43px;
+	}
+	
+	input:focus {
+		border-width: 2px;
+	}
+	
+	.log-options {
+		margin: 15px 0;
+		float: left;
+		font-size: 12px;
+	}
+	
+	.reg-button {
+		float: left;
+		height: 58px;
+	}
+	
+	.reg-other { 
+		text-align: left;
+		width: auto;
+	}
+	
+	.reg-right-col {
+		clear: both;
+		float: none;
+		margin: 10px auto;
+		width: 90%;
+	}
+	
+	.sso-pic {
+		display: none;
+	}
+	
+	.sso-links {
+		float: none !important;
+		width: 100%;
+	}
+	
+	.b-container {
+		padding: 0;
+	}
+	
+	.footer-links {
+		padding: 0 !important;
+	}
+	
+}
+
+@media screen and (max-width: 385px) {
+	
+	.s-type {
+		clear: both;
+		display: block;
+	}
+	
+	.log-info input[type="text"] {
+		width: 88%;
+	}
+	
+	.log-info input[type="password"] {
+		width: 88%;
+	}
+	
+	.reg-button {
+		font-size: 18px;
+		text-align: center;
+		width: 99%;
+	}
+}

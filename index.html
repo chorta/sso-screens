@@ -1,19 +1,21 @@
 <!doctype html>
 <html class="no-js" lang="en-US">
 <head>
-    <title>INSERT TITLE HERE</title>
+    <title>SINGLE SIGN-ON</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="robots" content="index,follow,noarchive">
     <meta name="ORGANIZATION" content="University of California, San Diego">
-    <meta name="SITE" content="SITE NAME HERE">
-    <meta name="PAGETITLE" content="INSERT TITLE HERE">
-    <meta name="DESCRIPTION" content="INSERT DESCRIPTION HERE">
+    <meta name="SITE" content="SINGLE SIGN-ON">
+    <meta name="PAGETITLE" content="SINGLE SIGN-ON">
+    <meta name="DESCRIPTION" content="SINGLE SIGN-ON">
 
-    <link rel="stylesheet" href="styles/bootstrap.css"/>
+    <link rel="stylesheet" href="https://cdn.ucsd.edu/developer/decorator/4.5.4/styles/bootstrap.css"/>
 
-    <link rel="stylesheet" href="styles/base.css"/>
+    <link rel="stylesheet" href="https://cdn.ucsd.edu/developer/decorator/4.5.4/styles/base.css"/>
+
+    <link rel="stylesheet" href="styles/sso.css"/>
 
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="styles/ie-support.css"/>
@@ -22,7 +24,7 @@
     <!-- Begin site-specific CSS files -->
     <!-- End site-specific CSS files -->
 
-    <script src="scripts/modernizr.js"></script>
+    <script src="https://cdn.ucsd.edu/developer/decorator/4.5.4/scripts/modernizr.js"></script>
 
     <!--[if lt IE 9]>
     <script src="scripts/respond.min.js"></script>
@@ -49,8 +51,8 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a href="index.html" class="title-header">Decorator 4.5.4</a>
-            <a href="index.html" class="title-header title-header-short">ACRN</a>
+            <a href="index.html" class="title-header">SINGLE SIGN-ON</a>
+            <a href="index.html" class="title-header title-header-short">SINGLE SIGN-ON</a>
 
             <a href="https://www.ucsd.edu" class="title-logo">UC San Diego</a>
         </div>
@@ -84,46 +86,120 @@
             <li class="active">
                 <a href="index.html">Home</a>
             </li>
-            <li class="navbar-subnav">
-                <a href="templates.html">Templates</a>
-                <ul class="navbar-sublist">
-                    <li><a href="blank-slate.html">Blank Slate</a></li>
-                    <li><a href="two-column.html">Two Columns</a></li>
-                    <li><a href="two-column-b.html">Two Columns B</a></li>
-                    <li><a href="three-column.html">Three Columns</a></li>
-                    <li><a href="form-a.html">Basic Form</a></li>
-                    <li><a href="homepage.html">Homepage</a></li>
-                    <li><a href="homepage-wide.html">Homepage Wide</a></li>
-                </ul>
-            </li>
-            <li><a href="docs/index.html">Kitchen Sink</a></li>
-            <li class="navbar-subnav">
-                <a href="widgets.html">Widgets</a>
-                <ul class="navbar-sublist">
-                    <li><a href="widgets/fullcalendar.html">FullCalendar</a></li>
-                    <li><a href="widgets/datatable.html">DataTable</a></li>
-                    <li><a href="widgets/wizard.html">Wizard</a></li>
-                    <li><a href="widgets/maxchar.html">MaxChar</a></li>
-                </ul>
-            </li>
         </ul>
     </div>
 </nav>
 
+
 <main class="layout-main" id="main-content" role="main">
     <div class="layout-container">
-        <ol class="breadcrumb breadcrumbs-list">
-            <li class="active">HOME</li>
-        </ol>
+
 
         <section class="main-section">
-            <h1>Decorator 4.5.4</h1>
 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <!-- SSO Screen Begins -->
+
+            <h1 class="signing">Signing on Using: <span class="s-type">Business Systems</span>  </h1>
+
+            <div class="row">
+              <div class="col-sm-12 nopadding">
+
+                <div class="col-sm-7">
+
+                  <!-- Left Column -->
+
+                  <div class="sso-screen">
+
+
+                    <div class="col-sm-5 login-other">
+
+                        <label class="hidden-xs">Or sign on with:</label>
+
+                        <span class="visible-xs"><label>Sign on with:</label></span>
+
+                        <select name="SSO">
+                          <option>Active Directory</option>
+                          <option>PID</option>
+                        </select>
+
+                        <p class="make-default"><input name="MakeDefault" id="MakeDefault" type="checkbox" value="1"><label for="MakeDefault"> Make this my default</label></p>
+
+
+                    </div>
+
+
+
+                    <div class="col-sm-7 login-option-select">
+
+
+
+
+                          <form id="form" name="form" method="post" action="do-it.php" target="_self">
+
+                            <div class="form-group">
+                              <label for="username">Username:</label>
+                              <input type="username" class="form-control" id="username">
+                              <p class="log-options"><a href="#" alt="Create a new single sign-on account" class="hidden-xs">Create new account</a></p>
+                            </div>
+
+                            <div class="form-group">
+                              <label for="pwd">Password:</label>
+                              <input type="password" class="form-control" id="pwd">
+                              <p class="log-options"><a href="#" alt="Create a new single sign-on account" class="hidden-xs">Reset Password</a></p>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary pull-right sso-button">Sign on</button>
+
+                            <div class="row clearfix">
+                              <div class="col-xs-12">
+                                <div class="col-xs-6 nopadding pull-left">
+                                  <p class="log-options"><a href="#" alt="Create a new single sign-on account" class="vissible-xs pull-left">Create new account</a></p>
+                                </div>
+                                <div class="col-xs-6 nopadding pull-right">
+                                  <p class="log-options"><a href="#" alt="Create a new single sign-on account" class="vissible-xs pull-right">Reset Password</a></p>
+                                </div>
+                              </div>
+                            </div>
+
+                        </form>
+
+
+
+                      </div>
+
+                        <p class="tip"><span class="sso-info" title="information"></span>Sign out and close your browser when you're finished.</p>
+
+                  </div>
+
+
+                </div>
+
+                <!--left col start -->
+
+                <div class="col-sm-5">
+
+                  <div class="sso-links">
+
+                      <h3>Links</h3>
+
+                          <ul>
+                              <li><a href="#">Learn about Single Sign-On</a></li>
+                              <li><a href="#">Contact your Departmental Security Administrator (DSA)</a></li>
+                              <li><a href="#">Contact the ACT Help Desk</a></li>
+                          </ul>
+
+                  </div>
+
+
+                </div>
+
+                <!--left col end -->
+
+              </div>
+            </div>
+
+            <!-- SSO Screen Ends -->
+
         </section>
     </div>
 </main>
@@ -147,9 +223,9 @@
     </section>
 </footer>
 
-<script src="scripts/jquery.min.js"></script>
+<script src="https://cdn.ucsd.edu/developer/decorator/4.5.4/scripts/jquery.min.js"></script>
 <script src="https://www.ucsd.edu/common/_emergency-broadcast/message.js"></script>
-<script src="scripts/base-min.js"></script>
+<script src="http://cdn.ucsd.edu/developer/decorator/4.5.4/scripts/base-min.js"></script>
 
 <script type="text/javascript">
     (function ($) {
@@ -184,7 +260,7 @@
 <script src="scripts/bootstrap.js"></script>
 
 
-<!-- Google Search -->
+<!-- Google Search
 <script src="https://www.google.com/jsapi"></script>
 <script type="text/javascript">// <![CDATA[
 google.load('search', '1');
@@ -194,8 +270,7 @@ google.setOnLoadCallback(function () {
             document.getElementById('q'),
             'cse-site-search');
 });
-// ]]></script>
-<script src="https://www.google.com/cse/brand?form=cse-search-box&amp;lang=en"></script>
+// ]]></script> -->
 
 </body>
 </html>
