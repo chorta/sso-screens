@@ -3,7 +3,7 @@
 Author: Cristian Horta
 Date: June 24, 2013
 
-Revised Date: June 22, 2017
+Revised Date: Sep 22, 2018
 
 */
 nav.navdrawer-container.layout-navbar {
@@ -338,6 +338,13 @@ label {
 		display: none !important;
 	}
 
+	h1.signing.hidden-xs {
+    	display: block !important;
+    	font-size: 21px;
+    	margin: 0 0 10px 0;
+	}
+
+
 
 }
 
@@ -389,16 +396,8 @@ label {
 
 
 
-
-
-
 }
 
-@media screen and (max-width: 490px) {
-
-
-
-}
 
 @media screen and (max-width: 400px) {
 
